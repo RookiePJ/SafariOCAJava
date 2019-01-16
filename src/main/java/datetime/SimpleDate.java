@@ -1,6 +1,7 @@
 package datetime;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 public class SimpleDate {
@@ -19,8 +20,20 @@ public class SimpleDate {
     D) An exception
      */
 
-    LocalDate aLittleLater = ld.plus(12, ChronoUnit.HOURS);
-    System.out.println(aLittleLater);
+//    LocalDate aLittleLater = ld.plus(24, ChronoUnit.HOURS);
+//    System.out.println(aLittleLater);
+    /*
+    What is the result:
+    A) 2019-01-17
+    B) 2019-01-16
+    C) An exception
+     */
+
+    DateTimeFormatter form =
+        DateTimeFormatter.ofPattern("'The date is: 'dd-MMMM-yyyy");
+    String theDate = form.format(ld);
+    System.out.println(theDate);
+
 
 //    String s = "Hello";
 //    s = s.concat(" world");
