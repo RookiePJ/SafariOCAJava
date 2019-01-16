@@ -14,7 +14,8 @@ https://www.safaribooksonline.com/library/view/oca-java-se/9780134427201/
 
  - Oracle Java Magazine (be sure to subscribe--free--to get access to current and past issues with my exam questions and discussion column)
 
- - Java Ranch (https://coderanch.com/forums) Discussion forum with heavy emphasis on Java certification topics. Many resources, including lists of resouces, and helpful people and useful discussions.
+ - Java Ranch (https://javaranch.com) Many resources, including lists of resouces, and helpful people and useful discussions.
+ - Java Ranch Forum (https://coderanch.com/forums) Discussion forum with heavy emphasis on Java certification topics.
 
  - API, Tutorials. Remember these are key source documents for the folks writing the questions.
 https://docs.oracle.com/javase/8/docs/
