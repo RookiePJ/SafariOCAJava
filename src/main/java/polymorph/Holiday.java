@@ -1,6 +1,11 @@
 package polymorph;
 
 public class Holiday extends Date {
+  class SomeInnerClass {
+    void doStuff() {
+      System.out.println(name);
+    }
+  }
   private String name;
   /*
   Default constructor has:

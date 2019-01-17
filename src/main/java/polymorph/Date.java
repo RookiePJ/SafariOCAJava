@@ -3,6 +3,8 @@ package polymorph;
 public class Date {
   private int day, month, year;
 
+//  public Date(){}
+
   public Date(int day, int month, int year) {
     this.day = day;
     this.month = month;
