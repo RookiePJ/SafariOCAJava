@@ -2,6 +2,12 @@ package polymorph;
 
 public class Holiday extends Date {
   private String name;
+  /*
+  Default constructor has:
+  - access same as class (except for enums)
+  - zero arguments
+  - "empty" body (really just contains "super();")
+   */
   // ANY explicit constructor removes the default
   // explicit constructor, mimics "default" constructor
   public Holiday(int day, int month, int year, String name) {

@@ -71,10 +71,131 @@ and:
     void doOtherStuff() { System.out.println("doOtherStuff"); }
   }
 
-In the Base and Sub classes, which are true in isolation?
+In the Base and Sub classes, which three are true in isolation? (Choose 3)
 No  A) doBaseStuff in Base can be marked public without causing errors
 Yes B) doBaseStuff in Base can be marked private without causing errors
 Yes C) doBaseStuff in Sub can be marked public without causing errors
 Yes D) doBaseStuff in Sub can be marked protected without causing errors
 No  E) doBaseStuff in Sub can be marked private without causing errors
 
+Q5)
+Y A) doOtherStuff in Sub can be marked private without causing errors
+Y B) doOtherStuff in Sub can be marked public without causing errors
+N C) doBaseStuff in Sub can be modified to return int without causing errors
+Y D) doBaseStuff in Sub can be modified to take an int and return an int without causing errors
+Y E) doBaseStuff in Sub can be modified to take an int and be private without causing errors
+
+Q6)
+Given:
+public void q11A(int x) {
+    x = x + 1;
+}
+And the fragment:
+
+    int x = 99;
+    q11A(x);
+    System.out.println(x);
+
+What is the result?
+    A) 99
+    B) 100
+    C) An error
+
+Q7)
+Given
+public void q12A(StringBuilder x) {
+    x.append(" world");
+}
+
+And:
+StringBuilder x = new StringBuilder("Hello");
+q12A(x);
+System.out.println(x);
+
+What is the result?
+    A) Hello
+    B) Hello world
+    C)  world
+    D) An error
+
+Q8)
+  public void q14A(Integer x) {
+    x = x + 1;
+  }
+
+    Integer x = 99;
+    q14A(x);
+    System.out.println(x);
+
+What is the result?
+    A) 99
+    B) 100
+    C) An error
+
+Q9)
+  public void q13A(int[] x) {
+    x[0] = x[0] + 1;
+  }
+
+    int x[] = {99};
+    q13A(x);
+    System.out.println(x[0]);
+
+What is the result?
+    A) 99
+    B) 100
+    C) An error
+
+Q10)
+Q7)
+Given
+public void q12A(String x) {
+    x = "Hello World!";
+}
+
+And:
+String x = "Hello";
+q12A(x);
+System.out.println(x);
+
+What is the result?
+    A) Hello
+    B) Hello world
+    C)  world
+    D) An error
+
+Q11)
+ class Base {
+    void doBaseStuff() {
+      System.out.println("doBaseStuff");
+    }
+  }
+ class Sub extends Base {
+    void doBaseStuff() {
+      System.out.println("doSubStuff");
+    }
+    void doOtherStuff() {
+      System.out.println("doOtherStuff");
+    }
+  }
+    Base b = new Sub();
+    b.doOtherStuff();
+
+What is the result?
+    A) doSubStuff
+    B) doOtherStuff
+    C) doBaseStuff
+    D) Exception at runtime
+    E) Compilation failure
+ 
+12)
+Given
+void doStuff(Sub s) {
+  Other x = (Other)s;
+}
+
+What is the result?
+A) success
+B) Compilation fails
+C) Runtime Exception
+D) Something else
