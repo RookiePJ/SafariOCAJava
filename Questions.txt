@@ -44,3 +44,37 @@ What is the result?
     C) Z-Hello, Z-Hello2
     D) Z-Hello, Y-Hello2
     E) Compilation fails
+
+Q3)
+given (all the Date/Holiday code and...)
+
+    _____ () {
+        return "Holiday called " +  name;
+    }
+
+What must fill the blank to cause current test code to output: Holiday called DecemberDay!
+
+No A) String toString
+No B) void toString
+No C) @Override String toString
+Yes D) public String toString
+No E) None of the above!
+
+Q4)
+Given:
+  class Base {
+    void doBaseStuff() { System.out.println("doBaseStuff"); }
+  }
+and:
+  class Sub extends Base {
+    void doBaseStuff() { System.out.println("doSubStuff"); }
+    void doOtherStuff() { System.out.println("doOtherStuff"); }
+  }
+
+In the Base and Sub classes, which are true in isolation?
+No  A) doBaseStuff in Base can be marked public without causing errors
+Yes B) doBaseStuff in Base can be marked private without causing errors
+Yes C) doBaseStuff in Sub can be marked public without causing errors
+Yes D) doBaseStuff in Sub can be marked protected without causing errors
+No  E) doBaseStuff in Sub can be marked private without causing errors
+
