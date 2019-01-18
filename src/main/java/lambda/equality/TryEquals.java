@@ -1,5 +1,7 @@
 package lambda.equality;
 
+import java.util.function.Predicate;
+
 public class TryEquals {
   public static void main(String[] args) {
     String s1 = new String("Hello");
@@ -16,5 +18,8 @@ public class TryEquals {
     Integer i2 = new Integer(1);
     System.out.println(i1 == i2);
     System.out.println(i1.equals(i2));
+
+    Predicate<String> ps = (s) -> s.length() % 2 == 0 ? false : true;
+
   }
 }

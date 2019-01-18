@@ -198,4 +198,46 @@ What is the result?
 A) success
 B) Compilation fails
 C) Runtime Exception
-D) Something else
+D) Something else.
+
+13)
+Which are valid (i.e. compile...) individually
+
+A) Predicate<String> ps = s -> s.length();
+B) Predicate<String> ps = x => return x.length() > 3;
+C) Predicate<Object> po = o -> o == "this";
+D) Predicate<String> ps = (s) -> { x.length() < 2 };
+
+14)
+Which <n> are valid (i.e. compile...) individually (Choose n)
+A) Predicate<Object> ps = s -> s.length() > 3;
+Predicate<Object> requires "public boolean test(Object o)"
+B) Predicate<String> ps = String s -> s.length() > 3; // needs parens round String s
+C) Predicate<Object> po = (String s) -> { return s.length() < 4; }; // argument must be Object
+D) Predicate<String> ps = (s) -> s.length() % 2 == 0 ? false : true;
+
+// Side note :)
+UnaryOperator<String> uos = s -> s.toUpperCase();
+
+15)
+Given:
+String h1 = "Hello";
+String h2 = new String("Hello");
+String h3 = "Hello";
+StringBuilder sb1 = new StringBuilder("Hello");
+StringBuilder sb2 = new StringBuilder("Hello");
+
+Which expressions are true?
+A) h1 == h2
+B) h1.equals(h2)
+C) h1.equals(sb1)
+D) h1 == h3
+E) sb1.equals(sb2)
+
+16)
+Select all the valid answers 
+void fun(int arr ...){ ... } 
+a) fun( {1,2,3,} ) NO
+b) fun( new int[]) NO
+c) fun(new int {1,2,3}) NO
+d) fun(1, 2, 3) YES
